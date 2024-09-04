@@ -19,6 +19,25 @@ You can install the package from PyPI:
 pip install askari-mgasa
 ```
 
+## policies.yaml file
+
+To use Askari-LLM, you need to define your policy rules in a policies.yaml file. This file should contain all the necessary rules and guidelines that the PolicyGuardrails class will enforce. Below is example of it's structure.
+
+```bash
+policies:
+  - name: "NoPersonalInformation"
+    description: "Prevent sharing personal information."
+    rules:
+      - "Do not allow users to share personal addresses."
+      - "Reject inputs that contain personal phone numbers."
+  - name: "NoSensitiveTopics"
+    description: "Avoid discussing sensitive topics."
+    rules:
+      - "Reject inputs that mention political figures."
+      - "Reject any discussion about religion."
+
+```
+
 ## Usage
 
 Here's a simple example demonstrating how to use the `askari-llm` package:
