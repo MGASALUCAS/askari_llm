@@ -13,7 +13,7 @@ Askari-LLM is a Python package designed to enforce policy guardrails on user inp
 
 ## Installation
 
-You can install the package from PyPI:
+You can install the package as below described:
 
 ```bash
 pip install askari-mgasa
